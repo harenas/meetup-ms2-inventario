@@ -1,0 +1,21 @@
+# Spring properties
+spring:
+  application:
+     name: inventario-service  # Service registers under this name
+  hibernate:
+     ddl-auto: none
+  datasource:
+     url: jdbc:mysql://localhost:3306/gt-productos
+     username: grantienda
+     password: grantienda
+
+
+# Discovery Server Access
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+
+# HTTP Server
+server:
+  port: 18000   # HTTP (Tomcat) port
