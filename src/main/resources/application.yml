@@ -5,7 +5,7 @@ spring:
   hibernate:
      ddl-auto: none
   datasource:
-     url: jdbc:mysql://dockerhost:3306/gt-productos
+     url: jdbc:mysql://127.0.0.1:3306/gt-productos
      username: grantienda
      password: grantienda
 
