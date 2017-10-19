@@ -5,17 +5,18 @@ spring:
   hibernate:
      ddl-auto: none
   datasource:
-     url: jdbc:mysql://127.0.0.1:3306/gt-productos
+     url: jdbc:mysql://localhost:3306/gt-productos
      username: grantienda
      password: grantienda
-
-
-# Discovery Server Access
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:1111/eureka/
 
 # HTTP Server
 server:
   port: 18000   # HTTP (Tomcat) port
+
+# Discovery Server Access
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
